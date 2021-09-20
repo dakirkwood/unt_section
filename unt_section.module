@@ -1,0 +1,5 @@
+<?php
+
+function unt_section_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'unt_section/section_styles';
+}

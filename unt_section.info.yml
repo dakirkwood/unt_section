@@ -1,0 +1,14 @@
+name: 'UNT Section'
+type: module
+description: 'Installs the UNT Section plugin for CKEditor4'
+core_version_requirement: 9.x
+package: 'CKEditor Plugins'
+dependencies:
+  - ckeditor
+
+libraries:
+  - unt_section/section_styles
+
+ckeditor_stylesheets:
+  - css/unt_section.css
+

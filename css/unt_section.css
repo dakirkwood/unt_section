@@ -1,0 +1,165 @@
+section.widget.section {
+  padding:1.5rem 1rem 3rem;
+  display: block;
+}
+p+section.widget {
+  margin-top: 2rem;
+}
+
+.background.image::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  content: '';
+  background: -moz-linear-gradient(45deg, rgba(0,116,57,1) 0%, rgba(189,219,204,0) 74%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(0,116,57,1) 0%,rgba(189,219,204,0) 74%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(0,116,57,1) 0%,rgba(189,219,204,0) 74%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007439', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+section.widget.section{
+  padding:3rem;
+  padding-bottom:4rem;
+  position:relative;
+  overflow: auto;
+}
+.section .background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.section .background.image {
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  filter: grayscale(.8);
+  overflow: hidden;
+}
+.section-media {
+  margin: 2rem 0;
+}
+.section.no-media .section-media {
+  display:none;
+}
+.media-left .section-media {
+  float: left;
+  margin: 0 1rem 0 0;
+}
+.media-right .section-media {
+  float: right;
+  margin: 0 0 0 1rem;
+}
+.section-media iframe,
+.section-media img{
+  margin: auto;
+  display: block;
+}
+.section-media img {
+  /*width:auto;
+  max-height: 350px;*/
+  width:100%;
+  height:auto;
+}
+.widget h2.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.widget.section .section-content {
+  line-height: 1.625rem;
+  max-width: 80%;
+  margin: auto;
+}
+.widget.section .section-content p {
+  color: inherit;
+  column-span: all;
+}
+.widget.section .section-content p:first-child,
+.widget.section .section-content h2+p,
+.widget.section .section-content h3+p,
+.widget.section .section-content h4+p {
+  margin-top:0;
+}
+.widget.section.one-col .section-content {
+  column-count: 1;
+  max-width:55%;
+}
+.widget.section.one-col.media-left .section-content,
+.widget.section.one-col.media-right .section-content {
+  max-width: 45%;
+}
+.widget.section.two-col .section-content {
+  column-count: 2;
+}
+.widget.section.three-col .section-content,
+.widget.section.four-col .section-content {
+  max-width:90%;
+}
+.widget.section.three-col .section-content {
+  column-count: 3;
+}
+.widget.section.four-col .section-content {
+  column-count: 4;
+}
+.widget.section table tr,
+.widget.section table tr:hover {
+  background-color: transparent;
+}
+.section-media{
+  padding:.25rem;
+  width: 100%;
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.widget.section.text-black,
+.widget.section.text-black a {
+  color: inherit;
+}
+.widget.section.text-white,
+.widget.section.text-white a {
+  color: #FFF;
+}
+.widget.section ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.widget.section ol {
+  margin: 0;
+  padding-left:1.75rem;
+}
+.widget.section ul li,
+.widget.section ol li {
+  color: inherit;
+}
+.widget.section ul li a::after{
+  content: ' \276F';
+}
+.widget.section.text-black ul li a::after{
+  color: #000;
+}
+.widget.section.text-white ul li a::after{
+  color:#FFF;
+}
+.section-media span,
+.uvideo span {
+  display: block;
+  position: relative;
+  padding-bottom: 50%;
+  /*max-width: 90%;*/
+  height: 0;
+  margin:auto;
+}
+.section-media iframe,
+.uvideo iframe {
+  position: absolute;
+  padding:0 1%;
+  height: 98%;
+  width: 98%;
+}

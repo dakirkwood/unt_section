@@ -1,0 +1,5 @@
+section_styles:
+  version: 1.x
+  css:
+    theme:
+      css/unt_section.css: {}
